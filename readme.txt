@@ -1,3 +1,5 @@
+Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997
+Fecha: 29/10/2021
 En este repositorio se encuentran 3 diferentes juegos en lenguaje python:
 1) Paint: Este programa es un juego de dibujo, en donde puedes dibujar lineas y diversas figuras, así mismo se le puede cambiar el color.
 2) Snake: Programa que cuenta con una serpiente encargada de obtener su comida, si la serpiente se toca a si misma o choca en la pared se termina el juego.
