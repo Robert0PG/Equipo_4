@@ -1,5 +1,6 @@
 "Este programa es un juego de dibujo, en donde puedes dibujar lineas y diversas figuras, así mismo se le puede cambiar el color"
 "Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997"
+"Fecha: 29/10/2021"
 from turtle import *
 
 from freegames import vector
