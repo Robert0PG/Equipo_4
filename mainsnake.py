@@ -1,6 +1,5 @@
 "Programa que cuenta con una serpiente encargada de obtener su comida, si la serpiente se toca a si misma o choca en la pared se termina el juego"
-"Autores: Christian Flores Alberto A01734997"
-from random import randrange
+"Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997"
 from turtle import *
 
 from freegames import square, vector
