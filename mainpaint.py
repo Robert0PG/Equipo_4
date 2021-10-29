@@ -1,5 +1,5 @@
 "Este programa es un juego de dibujo, en donde puedes sibujar lineas y diversas figuras, así mismo se le puede cambiar el color"
-"Autores: Roberto Peláez García A01732317"
+"Autores: Roberto Peláez García A01732317, Christian Flores Alberto A01734997"
 from turtle import *
 
 from freegames import vector
