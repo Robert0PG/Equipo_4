@@ -1,6 +1,6 @@
-#Este programa es un juego de destreza, pone a prueba la punteria impactando objetivos con proyectiles
-#Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997
-#Fecha: 29/10/2021
+'''Este programa es un juego de destreza, pone a prueba la punteria impactando objetivos con proyectiles
+Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997
+Fecha: 29/10/2021'''
 from random import randrange
 from turtle import *
 
