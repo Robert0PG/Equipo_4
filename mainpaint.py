@@ -41,7 +41,7 @@ def rectangle(start, end):
     down()
     begin_fill()
 
-    for count in range(3):
+    for count in range(2):
         forward(300)
         left(90)
         forward(150)
