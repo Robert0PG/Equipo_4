@@ -1,13 +1,15 @@
-"Este programa es un juego de dibujo, en donde puedes dibujar lineas y diversas figuras, así mismo se le puede cambiar el color"
-"Autores: Roberto Peláez García A01732317, Santiago León Salinas A01734958, Christian Flores Alberto A01734997"
-"Fecha: 29/10/2021"
+'''Este programa es un juego de dibujo, en donde puedes dibujar lineas y diversas figuras, así mismo se le puede cambiar el color
+Autores: Roberto Peláez García A01732317
+Santiago León Salinas A01734958
+Christian Flores Alberto A01734997
+Fecha: 29/10/2021'''
 from turtle import *
 
 from freegames import vector
 
 
 def line(start, end):
-    "Draw line from start to end."
+    #Dibuja la línea del final al inicio
     up()
     goto(start.x, start.y)
     down()
@@ -15,7 +17,7 @@ def line(start, end):
 
 
 def square(start, end):
-    "Draw square from start to end."
+    #Se dibuja el cuadrado
     up()
     goto(start.x, start.y)
     down()
@@ -29,6 +31,7 @@ def square(start, end):
 
 
 def circl(start, end):
+    #Se dibuja el círculo
     up()
     goto(start.x, start.y)
     down()
@@ -38,6 +41,7 @@ def circl(start, end):
 
 
 def rectangle(start, end):
+    #Se dibuja el rectángulo
     up()
     goto(start.x, start.y)
     down()
@@ -53,6 +57,7 @@ def rectangle(start, end):
 
 
 def triangle(start, end):
+    #Se dibuja el triángulo
     up()
     goto(start.x, start.y)
     down()
@@ -66,7 +71,7 @@ def triangle(start, end):
 
 
 def tap(x, y):
-    "Store starting point or draw shape."
+    #Guarda el punto de partida o dibuja la forma
     start = state['start']
 
     if start is None:
@@ -79,21 +84,23 @@ def tap(x, y):
 
 
 def store(key, value):
-    "Store value in state at key."
+    #Almacena la clave
     state[key] = value
 
-
+#Setup inicial
 state = {'start': None, 'shape': line}
 setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
+#Se asignan los colores a una letra para facilitar el cambio de color de la línea
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
 onkey(lambda: color('purple'),'P')
+#Se asigna una letra a un tipo de figura en específico
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circl), 'c')
