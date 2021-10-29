@@ -10,23 +10,27 @@ aim = vector(0, -10)
 
 
 def change(x, y):
-    "Change snake direction."
+    "Funcion que cambia la direccion de la serpiente"
     aim.x = x
     aim.y = y
 
 
 def inside(head):
-    "Return True if head inside boundaries."
+    "Funcion que regresa si la cabeza de la serpiente se encuentra dentro del recuadro"
     return -200 < head.x < 190 and -200 < head.y < 190
 
 colorbody=['blue','moccasin','black','green','purple']
+"Lista de colores que pueden ser elegidos para el cuerpo de la serpiente"
 color=random.choice(colorbody)
+"Funcion que regresa un color random"
 colorfood=['orange','cyan','gray','pink','gold']
+"Lista de colores que pueden ser elegidos para la comida"
 color2=random.choice(colorfood)
+"Funcion que regresa un color random"
 
 
 def move():
-    "Move snake forward one segment."
+    "Funcion que mueve a la serpiente"
     head = snake[-1].copy()
     head.move(aim)
 
@@ -53,7 +57,7 @@ def move():
     update()
     ontimer(move, 100)
 
-
+"Setup inicial"
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
