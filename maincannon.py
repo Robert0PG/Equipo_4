@@ -12,7 +12,7 @@ targets = []
 
 
 def tap(x, y):
-    "Respond to screen tap."
+    "Respuesta al click en la pantalla"
     if not inside(ball):
         ball.x = -199
         ball.y = -199
@@ -21,12 +21,12 @@ def tap(x, y):
 
 
 def inside(xy):
-    "Return True if xy within screen."
+    "Devuelve True si xy está dentro de la pantalla"
     return -200 < xy.x < 200 and -200 < xy.y < 200
 
 
 def draw():
-    "Draw ball and targets."
+    "Se crean los objetivos y la pelota"
     clear()
 
     for target in targets:
@@ -41,7 +41,7 @@ def draw():
 
 
 def move():
-    "Move ball and targets."
+    "Movimiento de la pelota y los objetivos"
     if randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
@@ -65,7 +65,7 @@ def move():
 
     ontimer(move, 50)
 
-
+"Setup del juego"
 setup(420, 420, 370, 0)
 hideturtle()
 up()
