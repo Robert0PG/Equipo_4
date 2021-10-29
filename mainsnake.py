@@ -1,3 +1,5 @@
+"Programa que cuenta con una serpiente encargada de obtener su comida, si la serpiente se toca a si misma o choca en la pared se termina el juego"
+"Autores: Christian Flores Alberto A01734997"
 from random import randrange
 from turtle import *
 
