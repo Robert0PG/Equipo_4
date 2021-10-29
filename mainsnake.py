@@ -19,6 +19,11 @@ def inside(head):
     "Return True if head inside boundaries."
     return -200 < head.x < 190 and -200 < head.y < 190
 
+colorbody=['blue','moccasin','black','green','purple']
+color=random.choice(colorbody)
+colorfood=['orange','cyan','gray','pink','gold']
+color2=random.choice(colorfood)
+
 
 def move():
     "Move snake forward one segment."
